@@ -1,1 +1,9 @@
 Flickr Data Collection
+
+This is a project for collecting the geotagged photos in FLICKR.
+
+FLICKR provided an API for the convenience.
+
+However, they can only return 4000 unique photos for each query. Thus I split the area, e.g. miami city, into 100 boxes. Moreover, the photos will be collected since 2005 by every single year.
+
+Please enjoy and feel free to give me comment!
