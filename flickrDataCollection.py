@@ -93,7 +93,7 @@ class flickrDataCollection:
 			cols = ', '.join(str(v) for v in data.keys())
 			values = '"'+'","'.join(str(v) for v in data.values())+'"'
 			sql = "INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s=%s" % (table, cols, values, 'photo_id', 'photo_id') #the primary key is photo_id
-			print sql
+			# print sql
 			try:
 				result = cur.execute(sql)
 				db.commit()
